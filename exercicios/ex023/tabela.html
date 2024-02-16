@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Borders</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+        .collapse {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        .colorborder {
+            border: 1px solid white;
+            border-collapse: collapse;
+        }
+        .colorborder th,td {
+            background-color: #96d4d4;
+        }
+        .roundtable{
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Table with Border</h2>
+    <p>Usar o CSS border para adicionar uma para a tabela</p>
+
+    <table>
+        <tr>
+            <th>Primeiro Nome</th>
+            <th>Ultímo Nome</th>
+            <th>Idade</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+        </tr>
+
+    </table>
+    
+    <h2>Border collapse</h2>
+    <table class="collapse" width="300px">
+        <tr class="collapse">
+            <th class="collapse">Nome</th>
+            <th class="collapse">Sobrenome</th>
+            <th class="collapse">Idade</th>
+        </tr>
+        <tr class="collapse">
+            <td class="collapse">Carlos</td>
+            <td class="collapse">Alburquerque</td>
+            <td class="collapse">50</td>
+        </tr>
+        <tr class="collapse">
+            <td class="collapse">Julia</td>
+            <td class="collapse">Victoriano</td>
+            <td class="collapse">14</td>
+        </tr>
+    </table>
+    <h2>Border Colorida</h2>
+    <table class="colorborder" width="300px">
+        <tr class="colorborder">
+            <th class="colorborder">Nome</th>
+            <th class="colorborder">Sobrenome</th>
+            <th class="colorborder">Idade</th>
+        </tr>
+        <tr class="colorborder">
+            <td class="colorborder">Sophia</td>
+            <td class="colorborder">Victoriano</td>
+            <td class="colorborder">09</td>
+        </tr>
+        <tr class="colorborder">
+            <td class="colorborder">Camila</td>
+            <td class="colorborder">Gonçalves</td>
+            <td class="colorborder">39</td>
+        </tr>
+    </table>
+    <h2>Round Table Borders</h2>
+    <p>Com border-radius, fica rodiando o canto</p>
+    <table class="roundtable" style="width: 300px;">
+        <tr class="roundtable">
+            <td class="roundtable">Douglas</td>
+            <td class="roundtable">Victoriano</td>
+            <td class="roundtable">41</td>
+        </tr>
+    </table>
+</body>
+</html>
